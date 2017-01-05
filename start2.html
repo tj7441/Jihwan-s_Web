@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function musicOff(){
+document.onoff.midi.stop();
+}
+
+function musicOn(){
+document.onoff.midi.play();
+}
+function changeButton(){
+if(document.onoff.B 1.value=='음악중지'){
+document.onoff.B 1.value='음악실행';
+musicOff();
+}else{
+document.onoff.B 1.value='음악중지';
+musicOn();
+}}
+</script>
+</head>
+
+<body>
+
+<form name="onoff">
+<button type="button" onclick="musicOn()">
+<embed name="midi" src="C:\Users\신은정PC\Desktop\TWICE - Cheer Up.mp3" width="30" height="10" hidden>play</button>
+<input type="button" value="음악중지" name="B1" onClick="changeButton()">
+
+</form>
+</body>
+
+</html> 
